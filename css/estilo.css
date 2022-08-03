@@ -1,0 +1,129 @@
+:root{
+    --cor-titulos: #262121;
+    --cor-texto: #464343;
+    --cor-cabecario-fundo: #F29C9C;
+    --cor-numeros-fundo: #ffffff;
+    --cor-sobre-fundo: #EBFCEA;
+    --cor-numeros: #E86464;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--cor-texto);
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+
+html,
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    background-color: var(--cor-cabecario-fundo);
+    text-align: center;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
+header img{
+    border: solid 1px #E9C9C9;
+    border-radius: 200px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.4);
+    height: 200px;
+}
+
+#lugar{
+    background-color: var(--cor-cabecario-fundo);
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    margin-bottom: 100px;
+}
+
+#espaco{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rokkitt', serif;
+    font-size: 23px;
+    letter-spacing: 5px;
+    padding-top: 40px;
+}
+
+#profissao{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.numero{
+    color: var(--cor-numeros);
+    font-size: 25px;
+}
+.numero-texto{
+    font-size: 15px;
+}
+
+#seguidores-seguindo{
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sobre{
+    background-color: var(--cor-sobre-fundo);
+    padding: 28px;
+}
+#sobre h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#sobre p{
+    line-height: 1.6;
+}
+
+#seguir{
+    padding:  4rem 40px;
+    text-align: center;
+}
+
+#seguir a{
+    background-color: var(--cor-cabecario-fundo);
+    border-radius: 100px;
+    color: var(--cor-numeros-fundo);
+    display: block;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+@media screen and (min-width: 960px){
+    body{
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 1265px;    
+    }
+    #seguir {
+        margin: 0 auto;
+        width: 30vw;
+    }
+    #sobre{
+        font-size: 1.3rem;
+    }
+   
+}
+
+
